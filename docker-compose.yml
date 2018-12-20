@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  deliveryappbackend:
+    image: mudho/deliveryappbackend
+    build:
+      context: .
+      dockerfile: Dockerfile
+  
+  maildev:
+    image: djfarrelly/maildev
+    ports:
+      - "1080:80"

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  deliveryappbackend:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5000:80"
